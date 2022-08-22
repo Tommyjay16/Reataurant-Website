@@ -1,0 +1,377 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: -16px;
+    background-image: url(images/food-background4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+}
+.navbar >ul{
+    background-color: chocolate;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-items: start;
+}
+
+.navbar ul li{
+   color: white;
+   list-style-type: none;
+   font-family: arial;
+   font-weight: bold;
+   padding: 0.43rem 0 0.43rem 0;
+   text-align: center;
+}
+
+
+.navbar li:hover{
+    cursor: pointer;
+   background-color: rgb(197, 183, 183);
+   color: rgb(182, 94, 31);
+}
+a{
+    text-decoration: none;
+   color: inherit;
+}
+
+p.restaurant-name{
+    color: chocolate;
+    font-family: courier;
+    font-weight: 900;
+    font-size: 5.3em;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    transition: color 1s ease;
+}
+p.restaurant-name:hover{
+    color: white;
+}
+/*.menu-button{
+    width: 15rem;
+    height: 1rem;
+    color: chocolate;
+    font-weight: bold;
+    font-family: arial;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    width: auto;
+    background-color: white;
+    position: relative;
+}
+div.menu-list ul{
+    list-style-type: none;
+    position: absolute;
+    top: -1px;
+    display: none;
+    transition: color 4s ease;
+    background-color: white;
+    width: 5rem;
+}
+.menu-button:hover .menu-list ul{
+    display: block;
+}*/
+div.first-container{
+    display:flex;
+    justify-content: space-between;
+}
+div.vids{
+    display: block;
+    margin-left: 5px;
+}
+
+
+div.review-container{
+    width: 99%;
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    border: ridge rgb(202, 145, 104) 0.1rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+    
+}
+div.review-container .review-text{
+    border: solid white 1px;
+    height: 9rem;
+    margin-top: 1.5rem;
+    border-radius: 0.2rem;
+    background-color: #ebc0a1;
+    width: 29%;
+
+}
+div.review-container div:first-child{
+    margin-left: 2rem;
+}
+div.review-container div:last-child{
+    margin-right: 2rem;
+
+}
+div.review-text{
+    padding-top: 0.3rem;
+    position: relative;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-left: 4px;
+}
+div.review-text:hover{
+    background-color: rgb(206, 105, 33);
+    color: rgb(228, 217, 217);
+    transition: color 0.45s ease;
+}
+div.customer-info{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -28px;
+    margin-top: -3px;
+}
+.footer-section{
+    background-color: rgb(51, 44, 44);
+    width: 99%;
+    height: 12rem;
+    margin-left: 7px;
+    margin-top: 6rem;
+    border-radius: 0 0 10px 10px;
+}
+.lagos-branch{
+    padding-top: 6px;
+    padding-left: 2.7rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.lagos-branch:hover{
+    color: chocolate;
+    transition: 0.3s;
+}
+.lagos-branch p span:hover{
+    color: white;
+    transition: 0.3s;
+}
+.lagos-branch p span{
+    color: chocolate;
+    text-decoration: underline;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.social-media-container{
+    margin-top: 10px;
+}
+.fb-section{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ig-section{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.twitter-section{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fb-section:hover, 
+.ig-section:hover,
+.twitter-section:hover{
+    color:chocolate;
+    transition: 0.3s;
+}
+.img:hover{
+    background-color: chocolate;
+}
+#home{
+    padding-left: 0;
+}
+
+
+
+
+
+@media screen and (max-width:700px) {
+    p.restaurant-name{
+        font-size: 3rem;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    div.vids{
+        display: flex;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width:1200px){
+     div.review-container>div.review-text{
+        display: grid;
+        grid-template-rows:repeat(2,1fr);
+        width: auto;
+        height: auto;
+     }
+
+     div.review-container .review-text{
+        height: auto;
+        width: auto;
+        font-size: 0.9rem;
+     }
+     
+
+     div.customer-info{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: -28px;
+        bottom: 1px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    div.review-container .review-text{
+        height: auto;
+        width: auto;
+        font-size: 0.8rem;
+     }
+     
+}
+
+@media screen and (max-width:800px){
+    div.review-container .review-text{
+        height: auto;
+        width: auto;
+        font-size: 0.76rem;
+     }
+}
+
+@media screen and (max-width:700px){
+    div.review-container .review-text{
+        height: auto;
+        width: auto;
+        font-size: 0.72rem;
+        height: 15rem;
+     }
+}
+
+@media screen and (max-width:640px){
+    div.review-container {
+        display: flex;
+        flex-direction: column;  
+    }
+
+    div.review-container div:first-child{
+        margin-left: 0;
+    }
+    div.review-container div:last-child{
+        margin-right: 0;
+    
+    }
+    div.customer-info{
+        position: absolute;
+        left: 5px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    div.review-container {
+        display: flex;
+        flex-direction: column;  
+    }
+
+    div.review-container div:first-child{
+        margin-left: 0;
+    }
+    div.review-container div:last-child{
+        margin-right: 0;
+    
+    }
+    div.customer-info{
+        position: absolute;
+        left: 5px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    div.review-container {
+        display: flex;
+        flex-direction: column;  
+    }
+
+    div.review-container div:first-child{
+        margin-left: 0;
+    }
+    div.review-container div:last-child{
+        margin-right: 0;
+    
+    }
+    div.customer-info{
+        position: absolute;
+        left: 5px;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    .lagos-branch, .social-media-container div{
+        font-size: 0.82rem;
+        
+    }
+
+    .footer-section{
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .lagos-branch, .social-media-container div{
+        font-size: 0.8rem;
+        
+    }
+
+    .footer-section{
+        margin-top: 190px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .lagos-branch, .social-media-container div{
+        font-size: 0.7rem;
+        
+    }
+
+    .footer-section{
+        margin-top: 230px;
+    }
+}
+
+
+
+
+
+
+

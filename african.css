@@ -1,0 +1,462 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/food-background4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;    
+}
+.etv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.etv p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    color: chocolate;
+    text-decoration: underline  rgba(153, 148, 148, 0.8) 2px;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.etv p:hover{
+    color: black;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: chocolate;
+    text-decoration: underline overline 2px rgb(48, 44, 44);
+    transition: 0.5s;
+    cursor: pointer;
+}
+h2:hover{
+    color: white;
+}
+img:hover{
+    border: solid chocolate 1px;
+}
+
+
+
+.grid1{
+    display: flex;
+    flex-direction: column; 
+    background-color: black;
+    width: 300px;
+    margin-left: -4rem;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    height: 9.3rem;
+    cursor: pointer;
+   
+}
+.grid1:hover{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+.food-container{
+    display: flex;
+    flex-direction: column; 
+    background-color: black;
+    width: auto;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+.food-container:hover{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    outline: solid 1px rgb(119, 113, 113);
+    
+}
+.food1{
+cursor: pointer;
+width: 300px;
+border-radius: 2px 2px 0 0;
+}
+.foodname{
+color: chocolate;
+font-weight: bold;
+font-family: arial;
+cursor: pointer;
+}
+.foodname:hover, .price:hover{
+    color: white;
+    transition: 0.25s;
+}
+.foodname:hover{
+    outline: solid 1px chocolate;
+    border-radius: 3px;
+}
+.price{
+color: rgb(255, 115, 96);
+font-weight: bold;
+margin-top: -90px;
+cursor: pointer;
+}
+.order-button{
+width: 120px;
+height: 30px;
+font-weight: bold;
+font-family: verdana;
+border-radius: 20px;
+cursor: pointer;
+
+}
+.order-button:hover{
+background-color: chocolate;
+color: rgb(231, 213, 213);
+cursor: pointer;
+transition: 0.3s;
+}
+
+
+.grid3{
+    display: flex;
+    flex-direction: column; 
+    background-color: black;
+    width: 300px;
+    margin-left: -4rem;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    height: 9.3rem;
+    cursor: pointer;
+   
+}
+.grid3:hover{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+.grid4{
+    display: flex;
+    flex-direction: column; 
+    background-color: black;
+    width: 300px;
+    margin-left: -4rem;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    height: 9.3rem;
+    cursor: pointer;
+}
+.grid4:hover{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+.grid5{
+    display: flex;
+    flex-direction: column; 
+    background-color: black;
+    width: 300px;
+    margin-left: -4rem;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    height: 9.3rem;
+    cursor: pointer;
+   
+}
+.grid5:hover{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+.lunch-food{
+    cursor: pointer;
+    width: 300px;
+    object-fit: cover;
+    height: 7rem;
+    border-radius: 5px 5px 0 0;
+    margin-top: -20px;
+    }
+
+.fdname{
+        color: chocolate;
+        margin-top: 0.05px;
+        font-weight: bold;
+        font-size: 1rem;
+        font-family: arial;
+        cursor: pointer;
+    }
+
+    .fdname:hover, .prc:hover{
+        color: white;
+        transition: 0.25s;
+    }
+    .fdname:hover{
+        outline: solid 1px chocolate;
+        border-radius: 3px;
+    }
+.prc{
+        color: rgb(255, 115, 96);
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: -72px;
+        cursor: pointer;
+    }
+.o-button{
+        width: 120px;
+        height: 22px;
+        font-weight: bold;
+        font-family: verdana;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: -5px;
+        
+    }
+.o-button:hover{
+        background-color: chocolate;
+        color: rgb(231, 213, 213);
+        cursor: pointer;
+        transition: 0.3s;
+    }   
+
+        
+
+    
+.grid1{
+    grid-area: lunch;
+    }
+.food-container{
+    grid-area: breakfast;
+}
+.grid3{
+    grid-area: desert;
+}
+.grid4{
+    grid-area: dinner;
+}
+.grid5{
+    grid-area: appetizer;
+}
+.african-container{
+    cursor: pointer;
+    gap: 10px;
+    padding: 1rem;
+    height: 400px;
+    display: grid;
+    margin: 0 10px 0 10px;
+    justify-items: center;
+    grid-template-areas: 
+    'lunch breakfast desert'
+    'dinner breakfast appetizer'
+    ;
+}
+.african-container div{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.african-menu-name p{
+    color: chocolate;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding: 0;
+    text-align: center;
+   text-decoration: underline overline rgb(218, 155, 110);
+   transition: color 0.5s;
+}
+.african-menu-name p:hover{
+    color: black;
+}
+.african-menu-container{
+    background-color: chocolate;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.15s;
+}
+.african-menu-container:hover{
+    background-color: rgb(202, 185, 185);
+}
+.african-menu-container>p{
+    font-weight: 590;
+    font-family: Impact, sans-serif;
+}
+.african-menu-container>p:hover{
+    color: chocolate;
+}
+
+
+.menu-whole-container{
+    display: grid;
+    grid-template-columns: 500px 190px 500px;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    
+    
+
+}
+.img-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    cursor: pointer;
+    
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    .etv p, .african-menu-name p{
+        font-size: 2.2rem;
+    }
+}
+
+
+@media screen and (max-width:1250px) {
+    .african-menu-container p, .african-menu-container{
+        font-size: 0.9rem;
+        width: 400px;
+    }
+
+    .img-section{
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width:1140px) {
+    .african-menu-container p, .african-menu-container{
+        font-size: 0.7rem;
+        width: 300px;
+    }
+
+    .img-section{
+        margin-left: -300px;
+    }
+
+
+}
+
+@media screen and (max-width:1100px){
+    .african-menu-container:last-child{
+        margin-left: -120px;
+    }
+}
+
+@media screen and (max-width:925px){
+    .img-section{
+        margin-left: -350px;
+    }
+
+    .african-menu-container:last-child{
+        margin-left: -170px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .menu-whole-container{
+        display: grid;
+        grid-template-columns: 300px 190px;
+        align-self: center;
+    }
+
+    .african-menu-container:last-child{
+        margin-left: 1px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    .menu-whole-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .img-section{
+        margin-right: -76px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1200px){
+    .food-container,
+    .african-container .grid5,
+    .african-container .grid3{
+        margin-left: -10rem;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .african-container{
+        margin-left: -1rem;
+    }
+}
+
+
+@media screen and (max-width:1040px) {
+    .african-container .grid1,
+    .african-container .grid3,
+    .african-container .grid4,
+    .african-container .grid5,
+    .african-container .food-container,
+    .lunch-food,
+    .food1{
+        width: 230px;
+    }
+    .fdname{
+        font-size: 0.8rem;
+    }
+    .foodname{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:830px){
+    .african-container{
+        grid-template-areas: 
+    'lunch breakfast'
+    'dinner breakfast'
+    'desert appetizer'
+    ;
+    margin-bottom: 200px;
+    }
+    .african-container .grid3{
+        margin-right: -90px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .african-container{
+        grid-template-areas: 
+        'lunch'
+        'breakfast'
+        'desert'
+        'dinner'
+        'appetizer'
+        ;
+        margin-bottom: 600px;
+        
+    }
+    .african-container .food-container,
+    .african-container .grid5{
+        margin-right: -95px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
